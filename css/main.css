@@ -10,6 +10,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+.reveal .bold {
+  font-weight: bold;
+}
+
 .reveal a {
   color: #41B883;
   font-weight: 600;
