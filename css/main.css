@@ -18,6 +18,12 @@ body {
   font-weight: bold;
 }
 
+.reveal section img {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
 .reveal a {
   color: #41B883;
   font-weight: 600;
