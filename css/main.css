@@ -29,6 +29,10 @@ body {
   font-weight: 600;
 }
 
+.green {
+  color: #41B883 !important; 
+}
+
 .reveal quote {
   color: #41B883;
   font-weight: 400;
