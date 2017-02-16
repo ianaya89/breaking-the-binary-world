@@ -82,73 +82,7 @@
 
         <section>
           <section>
-            <h1>Vue.js vs Angular 2</h1>
-          </section>
-
-          <section>
-            <h2>Performance</h2>
-            <img src="img/vs-angular.png" alt="vs-angular", style="width: 50%">
-            <p>
-              <small>23kb vs. 50kb</small>
-            </p>
-          </section>
-
-          <section>
-            <h2>+ Flexibilidad</h2>
-            <ul>
-              <li>Menos estructurado</li>
-              <li>Menos basado en opinion</li>
-              <li>Orientado a un core</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>- Curva de Aprendizaje</h2>
-            <p><u>Angular Hello World:</u></p>
-            <ul>
-              <li>ES2015</li>
-              <li>npm con 15 deps</li>
-              <li>4 archivos</li>
-              <li>3000 palabras explicación</li>
-            </ul>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h1>Vue.js vs React</h1>
-          </section>
-
-          <section>
-            <h2>Similitudes</h2>
-            <ul>
-              <li>Virtual DOM</li>
-              <li>Reactividad y Componentes</li>
-              <li><i>Core based</i> (Vista)</li>
-              <li>Minimizan mutaciones en el DOM</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>Diferencias</h2>
-            <ul>
-              <li>No <code>shouldComponentUpdate</code> (Tracking Automático)</li>
-              <li>"No requiere" optimizaciones</li>
-              <li>Animaciones 10x</li>
-              <li>+elementos y -componentes</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>Performance</h2>
-            <img src="img/vs-react.png" alt="vs-react", style="width: 50%">
-          </section>
-
-        </section>
-
-        <section>
-          <section>
-            <h1>Por que Vue.js?</h1>
+            <h1>Por Que <a href="#">Vue.js?</a></h1>
           </section>
 
           <section>
@@ -186,16 +120,16 @@
         <section>
           <section>
             <h1>Declarative Rendering</h1>
-            <div style="float: left; display: inline; width: 50%">
-              <img src="img/declarative-rendering.png" alt="declarative-rendering">
-            </div>
-            <div style="float: left; display: inline; margin-left: 50px; margin-top: 50px">
-              <ul>
-                <li>Reactivo</li>
-                <li>Automático</li>
-                <li>Solo Vista</li>
-              </ul>
-            </div>
+            <img src="img/declarative-rendering.png" alt="declarative-rendering" />
+          </section>
+
+          <section>
+            <h2>Caraterísticas</h2>
+            <ul>
+              <li>Reactivo</li>
+              <li>Automático</li>
+              <li>Solo Vista</li>
+            </ul>
           </section>
 
           <section>
@@ -208,7 +142,7 @@
               <li><code>{{ 'hello ' }} {{ 'world!'}}</code></li>
               <li><code>{{ 1 + 2 }}</code></li>
               <li><code>{{ true ? 'yes' : 'no' }}</code></li>
-              <li><code>{{ str.replace(/-/g, '')}}</code></li>
+              <li><code>{{ str.replace(/-/g, '') }}</code></li>
               <li><code>{{ JSON.stringify(obj) }}</code></li>
             </ul>
           </section>
@@ -233,7 +167,7 @@
             </p>
           </section>
 
-          <section>
+          <!-- <section>
             <h2>Modifiers</h2>
             <ul>
               <li><code>.stop</code></li>
@@ -243,7 +177,7 @@
               <li><code>.{keyCode | keyAlias}</code></li>
               <li><code>.once</code></li>
             </ul>
-          </section>
+          </section> -->
 
           <section>
             <h2 style="margin-top: -10px">Methods</h2>
@@ -263,7 +197,7 @@
 
         <section>
           <section>
-            <h2>Component System</h2>
+            <h1>Component System</h1>
             <div >
               <img src="img/components.png" alt="components">
             </div>
@@ -273,7 +207,6 @@
             <h2>Características</h2>
             <ul>
               <li>ASAP</li>
-              <li>Auto contenidos</li>
               <li>Reutilizables (no siempre)</li>
               <li>Estructura de árbol</li>
               <li>HTML semántico</li>
@@ -349,21 +282,6 @@
 
         <section>
           <section>
-            <h1>Large Scale State Management</h1>
-            <h3><a href="https://github.com/vuejs/vuex" target="_blank">vuex</a></h3>
-          </section>
-
-          <section>
-            <img src="img/vuex.png" alt="vuex" style="width: 80%">
-            <ul>
-              <li><i>Store</i> centralizado</li>
-              <li>Flujo de data <i>One-Way</i></li>
-            </ul>
-          </section>
-        </section>
-
-        <section>
-          <section>
             <h1>Build System</h1>
             <h3>DX - Developer Experience</h3>
           </section>
@@ -391,6 +309,21 @@
         </section>
 
         <section>
+          <section>
+            <h1>Large Scale State Management</h1>
+            <h3><a href="https://github.com/vuejs/vuex" target="_blank">vuex</a></h3>
+          </section>
+
+          <!-- <section>
+            <img src="img/vuex.png" alt="vuex" style="width: 80%">
+            <ul>
+              <li><i>Store</i> centralizado</li>
+              <li>Flujo de data <i>One-Way</i></li>
+            </ul>
+          </section> -->
+        </section>
+
+        <section>
           <h1>Server Side Rendering</h1>
           <h3><a href="https://vuejs.org/v2/guide/ssr.html" target="_blank">Nativo</a></h3>
           <h3><a href="https://nuxtjs.org/" target="_blank">Nuxt.js</a></h3>
@@ -409,6 +342,72 @@
         <section data-background="img/magic.gif">
           <h1><a href="http://codepen.io/ianaya89/pen/wgZqdV" class="white">DEMO</a></h1>
         </section>
+
+        <!-- <section>
+          <section>
+            <h1>Vue.js vs Angular 2</h1>
+          </section>
+
+          <section>
+            <h2>Performance</h2>
+            <img src="img/vs-angular.png" alt="vs-angular", style="width: 50%">
+            <p>
+              <small>23kb vs. 50kb</small>
+            </p>
+          </section>
+
+          <section>
+            <h2>+ Flexibilidad</h2>
+            <ul>
+              <li>Menos estructurado</li>
+              <li>Menos basado en opinion</li>
+              <li>Orientado a un core</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>- Curva de Aprendizaje</h2>
+            <p><u>Angular Hello World:</u></p>
+            <ul>
+              <li>ES2015</li>
+              <li>npm con 15 deps</li>
+              <li>4 archivos</li>
+              <li>3000 palabras explicación</li>
+            </ul>
+          </section>
+        </section> -->
+
+        <!-- <section>
+          <section>
+            <h1>Vue.js vs React</h1>
+          </section>
+
+          <section>
+            <h2>Similitudes</h2>
+            <ul>
+              <li>Virtual DOM</li>
+              <li>Reactividad y Componentes</li>
+              <li><i>Core based</i> (Vista)</li>
+              <li>Minimizan mutaciones en el DOM</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Diferencias</h2>
+            <ul>
+              <li>No <i>shouldComponentUpdate</i> (Tracking Automático)</li>
+              <li>"No requiere" optimizaciones</li>
+              <li>Animaciones 10x</li>
+              <li>+elementos y -componentes</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Performance</h2>
+            <img src="img/vs-react.png" alt="vs-react", style="width: 50%">
+          </section>
+
+        </section> -->
 
         <section>
           <h1>Recursos</h1>
