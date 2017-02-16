@@ -6,7 +6,7 @@
 
   <title>Breakin the Binary World | Vue.js</title>
 
-  <link rel="icon" sizes="32x32" type="image/png" href="img/favicon.png">
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
 
   <link rel="stylesheet" href="css/reveal.css">
   <link rel="stylesheet" href="css/theme/black.css">
@@ -27,630 +27,366 @@
     document.getElementsByTagName( 'head' )[0].appendChild( link );
   </script>
   </head>
+
   <body>
-  <div style="background: #41B883; height: 7px">
-  </div>
-  <div style="background: #35495E; height: 5px">
-  </div>
-  <div class="reveal">
-    <div class="slides">
-      <section>
-        <h1>
-          Rompiendo el Mundo Binario
-          <br>con <a href="https://vuejs.org/" target="_blank">Vue.js</a>
-        </h1>
-        <h1>
-          <span>
-            🌎&nbsp;&nbsp;🔨
-          </span>
-          <span>
-            <img class="logo" src="img/vue.png" alt="vue">
-          </span>
-        </h1>
-      </section>
-
-      <section>
-        <h1>Ignacio Anaya</h1>
-        <h3><a href="http://twitter.com/ianaya89">@ianaya89</a></h3>
-        <h5>Full Stack Developer en E-xact Transactions</h5>
-        <h5>Programming Mentor en Thinkful</h5>
-        <ul class="no-bullets">
-        <li><a href="https://twitter/ianaya89"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="https://github.com/ianaya89"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://ar.linkedin.com/in/ianaya89"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="http://stackoverflow.com/users/4195328/ianaya89"><i class="fa fa-stack-overflow"></i></a></li>
-      </ul>
-      </section>
-
-      <section data-background="img/handsup.gif">
-        <h1 class="bold white">Cuantos de ustedes usan... ?</h1>
-      </section>
-
-      <section>
-        <section>
-          <h1>Vue.js vs Angular 2</h1>
-        </section>
-
-        <section>
-          <h1>Performance</h1>
-          <p>Tabla</p>
-        </section>
-
-        <section>
-          <h1>Tamaño</h1>
-          <p>23kb vs 50kb</p>
-        </section>
-
-        <section>
-          <h1>Flexibilidad</h1>
-          <ul>
-            <li>Menos estructurado</li>
-            <li>Menos basado en opinion</li>
-          </ul>
-        </section>
-
-        <section>
-          <h1>Aprendizaje</h1>
-          <h3>Angular Hello World!</h3>
-          <ul>
-            <li>ES2015</li>
-            <li>npm con 15 deps</li>
-            <li>4 archivos</li>
-            <li>3000 palabras para explicarlo</li>
-          </ul>
-        </section>
-
-        <section data-background="img/contract.gif">
-          <h1 class="white">Dónde Firmo?</h1>
-        </section>
-
-        <section>
-          <h1>Antes</h1>
-          <ul>
-            <li>CSS, JS y HTML plano</li>
-            <li>Deploy = Copiar Archivos</li>
-            <li>Codigo orientado al Browser</li>
-            <li>Dificil Mantenimiento</li>
-            <li>Procesos Manuales</li>
-            <li>Mala Performance</li>
-          </ul>
-        </section>
-
-        <section>
-          <h1>Ahora</h1>
-          <h3>Codigo ➡️ </h3>
-          <img src="img/magic.gif" alt="">
-          <h3> ➡️ Felicidad</h3>
-        </section>
-
-        <section>
-          <h2>Aclaraciones</h2>
-          <ul>
-            <li>Diversidad de herramientas</li>
-            <li>Mi experiencia</li>
-            <li>Linea disfusa entre herramientas y frameworks</li>
-            <li>Node & Browser</li>
-          </ul>
-        </section>
-      </section>
-
-      <section>
-        <section>
-          <h1>Editor de Texto</h1>
-        </section>
-
-        <section>
-          <h1>Atom</h1>
-          <ul>
-            <li>Gratuito 🙌</li>
-            <li>Rapido, extensible y customizable</li>
-            <li>Plugins (colors, git, linter, emmet)</li>
-            <li>Snippets</li>
-            <li>Temas + Fuentes</li>
-            <li>Desarrollado en Electron</li>
-          </ul>
-        </section>
-
-        <section data-background="img/magic.gif">
-          <h1 class="white">DEMO</h1>
-        </section>
-      </section>
-
-      <section>
-        <section>
-          <h1>Terminal</h1>
-        </section>
-
-        <section>
-          <h1>Linea de Comandos</h1>
-          <p>Aprendamos a querarla ❤️</p>
-          <ul>
-            <li>iTerm</li>
-            <li>ConEmu</li>
-            <li>GitBash</li>
-            <li>Zsh</li>
-            <li>alias copy='cp'</li>
-          </ul>
-        </section>
-
-        <section data-background="img/demo.gif">
-          <h1 class="white">Demo</h1>
-        </section>
-      </section>
-
-      <section>
-        <section>
-          <h1>Estandarización de Codigo</h1>
-        </section>
-
-        <section data-background="img/line.gif">
-        </section>
-
-        <section>
-          <h1>ESlint</h1>
-          <p>Linter para codigo para JavaScript</p>
-          <ul>
-            <li>CLI</li>
-            <li>Basado en reglas</li>
-            <li>Configurable</li>
-            <li>Extensible</li>
-            <li>Plugins para editores</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2><code class="black">.eslintr</code></h2>
-          <pre>
-            <code style="max-height: 480px">
-              {
-                "env": {
-                  "browser": true,
-                },
-                "globals": {
-                  "angular": true,
-                },
-                "rules": {
-                  "camelcase": 2,
-                  "curly": 2,
-                  "brace-style": [2, "1tbs"],
-                  "quotes": [2, "single"],
-                  "semi": [2, "always"],
-                  "space-in-brackets": [2, "never"],
-                  "space-infix-ops": 2,
-                }
-              }
-            </code>
-          </pre>
-        </section>
-
-        <section>
-          <h1>EditorConfig</h1>
-          <ul>
-            <li>Consistencia de código entre editores</li>
-            <li>Estilos generales</li>
-            <li>Estilos por tipo de archivo</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2><code class="black">.editorconfig</code></h2>
-          <pre>
-            <code>
-              root = true
-
-              [*]
-              indent_style = space
-              indent_size = 2
-              charset = utf-8
-              trim_trailing_whitespace = true
-              insert_final_newline = true
-
-              [*.md]
-              trim_trailing_whitespace = false
-
-            </code>
-          </pre>
-        </section>
-
-        <section data-background="img/magic.gif">
-          <h1 class="white">DEMO</h1>
-        </section>
-      </section>
-
-      <section>
-        <section>
-          <h1>Calidad de Código</h1>
-        </section>
-
-        <section>
-          <h1>Karma</h1>
-          <ul>
-            <li>Correr tests con feedback instantaneo</li>
-            <li>Reproducir tests en todo tipo de browsers.</li>
-            <li>Integración con frameworks de test (jasmine, mocha, etc.)</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2><code class="black">karma.conf.js</code></h2>
-          <pre>
-            <code style="max-height: 460px">
-            module.exports = function(config) {
-              config.set({
-                browsers: ['PhantomJS', 'Chrome'],
-                frameworks: ['mocha'],
-                reporters: ['spec', 'coverage'],
-                files: ['test/'],
-
-                coverageReporter: {
-                  dir      : './coverage',
-                  reporters: [
-                    { type: 'lcov', subdir: '.' },
-                    { type: 'text-summary' }
-                  ]
-                }
-              });
-            };
-            </code>
-          </pre>
-        </section>
-
-        <section>
-          <h1>Istanbul</h1>
-          <ul>
-            <li>CLI</li>
-            <li>Tracking de linea, branch y funciones</li>
-            <li>Medir <i>code-coverage</i> del proyecto</li>
-            <li>Reportes</li>
-          </ul>
-        </section>
-
-        <section>
-          <h1>Coveralls</h1>
-          <ul>
-            <li>Servicio web para medir y trackear <i>code-coverage</i></li>
-            <li>Analisis y estadísticas</li>
-            <li>Historial</li>
-            <li>CI + GitHub ❤️</li>
-          </ul>
-        </section>
-
-        <section data-background="img/coveralls.png">
-        </section>
-
-        <section data-background="img/demo.gif">
-          <h1 class="white">DEMO</h1>
-        </section>
-      </section>
-
-      <section>
-        <section>
-          <h1>Pre-Procesadores</h1>
-        </section>
-
-        <section>
-          <h1>Sass</h1>
-          <ul>
-            <li>Pre-procesador CSS</li>
-            <li>Cambia la sintaxis</li>
-            <li>Mas funcionalidades (variables, nesting, mixins, herencia, etc).</li>
-            <li><i>Watcher</i></li>
-          </ul>
-        </section>
-
-        <section>
-          <h1><s>Jade</s> Pug</h1>
-          <ul>
-            <li>Pre-procesador HTML</li>
-            <li>Motor de template</li>
-            <li>Menos sintaxis</li>
-            <li>Mas funcionalidad (partials, mixins, condicionales, etc)</li>
-            <li>node & browser</li>
-          </ul>
-        </section>
-
-        <section data-background="img/happy.gif">
-          <h1><a href="http://codepen.io/ianaya89/pen/NbeLWJ" class="white">DEMO</a></h1>
-        </section>
-
-      </section>
-
-      <section>
-        <section>
-          <h1>Transpilacion</h1>
-          <p>Transformacion + Compilacion</p>
-        </section>
-
-        <section>
-          <h1>Babel</h1>
-          <ul>
-            <li>Nuevas funcionalidades en ES6 en todo tipo de browsers.</li>
-            <li>Transforma ES6 en codigo ES5 equivalente.</li>
-            <li>Orientado a presets (modulos)</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2><code class="black">.babelrc</code></h2>
-          <pre>
-            <code>
-            {
-              "presets": ["es2015", "stage-1"],
-              "comments": false
-            }
-            </code>
-          </pre>
-        </section>
-
-        <section data-background="img/demo.gif">
-          <h1><a class="white" href="https://babeljs.io/repl/#?babili=false&evaluate=true&lineWrap=false&presets=es2015%2Creact%2Cstage-2&code=const%20hello%20%3D%20'Hola%2C%20'%3B%0A%0A()%20%3D%3E%20%7B%0A%20%20console.log(hello)%3B%0A%7D%0A%0Afunction%20add(x%20%3D%201%2C%20y%20%3D%203)%20%7B%0A%20%20return%20x%20%2B%20y%3B%0A%7D%0A%0Aconsole.log(%60%24%7Bhello%7D%20Mundo!%60)%3B">
-            DEMO
-          </a></h1>
-        </section>
-      </section>
-
-      <section>
-        <section>
-          <h1>Dependencias</h1>
-        </section>
-
-        <section>
-          <h1>npm</h1>
-          <ul>
-            <li>CLI</li>
-            <li>Registro Open Source</li>
-            <li>Mas grande del mundo 🙌</li>
-            <li>Node & Browser</li>
-          </ul>
-        </section>
-
-        <section data-background="img/npm-stats.png">
-        </section>
-
-        <section>
-          <h1>BitHound</h1>
-          <ul>
-            <li>Analizar dependencias de npm</li>
-            <li>Detecta obsolescencia, inseguridades, falta de uso, desactualizaciones</li>
-            <li>Ayuda a refactorizar codigo</li>
-            <li>Tracking de <i>TODO's</i></li>
-            <li>CI + GitHub ❤️</li>
-          </ul>
-        </section>
-
-        <section data-background="img/bithound.png">
-        </section>
-
-        <section>
-          <h1>Greenkepper</h1>
-          <ul>
-            <li>Monitoreo en tiempo real</li>
-            <li>Acutalizacion automatica de dependencias</li>
-            <li>GitHub</li>
-          </ul>
-        </section>
-
-        <section data-background="img/greenkeeper.png">
-        </section>
-      </section>
-
-      <section>
-        <section>
-          <h1>Bundling</h1>
-        </section>
-
-        <section>
-          <h1>Webpack</h1>
-          <ul>
-            <li>Agrupa dependencias/modulos y crear archivos estaticos</li>
-            <li>Basado en loaders</li>
-            <li>Hot Replacement</li>
-            <li>Dev Web Server</li>
-            <li>Fonts, Svg, Imagenes</li>
-            <li>Babel, Sass, Pug, Karma, npm</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2><code class="black">webpack.config.js</code></h2>
-          <pre>
-            <code style="max-height: 550px;">
-              const webpack = require('webpack');
-
-              module.exports = {
-                entry: './src/index.js',
-
-                output: {
-                  path: './dist',
-                  filename: 'lib.js'
-                },
-
-                resolve: { root: path.resolve('./') },
-
-                module: {
-                  preLoaders: [{
-                    test   : /\.js$/,
-                    loader : 'eslint',
-                    include: projectRoot,
-                    exclude: /node_modules/
-                  }],
-                  loaders: [
-                    {
-                      test: /\.(woff|ttf|eot|svg)$/,
-                      loader: 'url?limit=64000'
-                    },
-                    {
-                      test: /\.(png|jpg)$/,
-                      loader: 'url?limit=64000'
-                    },
-                    {
-                      test   : /\.js$/,
-                      exclude: /node_modules/,
-                      loader : 'babel'
-                    },
-                    {
-                      test  : /\.css$/,
-                      loader: 'style-loader!css-loader?root=./src/'
-                    },
-                    {
-                      test  : /\.scss$/,
-                      loader: 'style!css!sass'
-                    }
-                  ]
-                },
-              };
-            </code>
-          </pre>
-        </section>
-
-        <section data-background="img/happy.gif">
-          <h1 class="white">DEMO</h1>
-        </section>
-      </section>
-
-      <section>
-        <section>
-          <h1>Automatización</h1>
-        </section>
-
-        <section>
-          <h1>npm scripts</h1>
-          <ul>
-            <li>Comandos definidos en <code class="black">package.json</code></li>
-            <li>Pequeñas utilidades</li>
-            <li>Grandes sistemas de build</li>
-            <li><code class="black">npm run [script]</code></li>
-            <li>Evitamos el uso de dependencias globales</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2><code class="black">package.json</code></h2>
-          <pre>
-            <code>
-      "name": "luhn-cc",
-      "version": "0.0.6",
-      "scripts": {
-        "build": "webpack --mode=build",
-        "dev": "webpack --progress --colors --watch --mode=dev",
-        "test": "karma start karma.conf.js --single-run",
-        "test-watch": "karma start karma.conf.js --auto-watch",
-        "check-cover": "open coverage/lcov-report/index.html",
-        "eslint": "eslint . .js",
-        "prepublish": "npm run build",
-        "bithound": "bithound check git@github.com:ianaya89/luhn-cc.git"
-      },
-            </code>
-          </pre>
-        </section>
-      </section>
-
-      <section>
-        <section>
-          <h1>CI</h1>
-          <p>Integración Continua</p>
-        </section>
-
-        <section>
-          <h1>Circle CI</h1>
-          <ul>
-            <li>Integraciones automáticas</li>
-            <li>Delivery automático</li>
-            <li>Instalar dependencias, correr tests, generar informes, integrar con servicios de terceros.</li>
-            <li>Deploy rápido, reproducible y debuggeable</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2><code class="black">circle.yml</code></h2>
-          <pre>
-            <code style="max-height: 550px">
-    machine:
-      timezone:
-        America/Vancouver
-      node:
-        version: 6
-
-    dependencies:
-      override:
-        - npm install
-        - npm install coveralls
-        - npm install bithound
-
-    test:
-      override:
-        - npm test
-        - COVERALLS_SERVICE_NAME="circleci" COVERALLS_SERVICE_JOB_ID="$CIRCLE_BUILD_NUM" ./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info
-        - ./node_modules/.bin/bithound check git@github.com:ianaya89/luhn-cc.git
-      post:
-        - cp -R ./coverage/* $CIRCLE_ARTIFACTS/
-
-            </code>
-          </pre>
-        </section>
-
-        <section data-background="img/circle.png">
-
-        </section>
-      </section>
-
-      <section>
-        <section>
-          <h1>GitHub</h1>
-        </section>
-
-        <section>
-          <h2>Git Flow</h2>
-          <ul>
-            <li>Modelo de branch</li>
-            <li>Branch develop & master</li>
-            <li>1 Funcionalidad = 1 Branch</li>
-            <li>Release/s Branch</li>
-            <li>Hot Fix Branch</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Pull Requests</h2>
-          <ul>
-            <li>Visibilidad</li>
-            <li>Revision de código</li>
-            <li>Seguridad</li>
-            <li>Aprendizaje</li>
-          </ul>
-        </section>
-
-        <section data-background="img/pr.png">
-
-        </section>
-      </section>
-
-      <section data-background="img/applause.gif">
-        <h1 class="white">Gracias! 👏</h1>
-        <h3><a href="http://twitter.com/ianaya89">@ianaya89</a></h3>
-        <h1><a href="http://bit.ly/2hZCyk3">http://bit.ly/2hZCyk3</a></h1>
-      </section>
-
-      <section data-background="img/wait.gif">
-        <h1 class="white">Preguntas?</h1>
-      </section>
+    <div style="background: #41B883; height: 7px">
     </div>
-  </div>
+    <div style="background: #35495E; height: 5px">
+    </div>
 
-  <script src="lib/js/head.min.js"></script>
-  <script src="js/reveal.js"></script>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>
+            Rompiendo el Mundo Binario
+            <br>con <a href="https://vuejs.org/" target="_blank">Vue.js</a>
+          </h1>
+          <h1>
+            <span>
+              🌎&nbsp;&nbsp;🔨
+            </span>
+            <span>
+              <img class="logo" src="img/vue.png" alt="vue">
+            </span>
+          </h1>
+        </section>
 
-  <script>
-    Reveal.initialize({
-    history: true,
+        <section>
+          <h1>Ignacio Anaya</h1>
+          <h3><a href="http://twitter.com/ianaya89">@ianaya89</a></h3>
+          <h5>Full Stack Developer en E-xact Transactions</h5>
+          <h5>Programming Mentor en Thinkful</h5>
+          <ul class="no-bullets">
+          <li><a href="https://twitter/ianaya89"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://github.com/ianaya89"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://ar.linkedin.com/in/ianaya89"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="http://stackoverflow.com/users/4195328/ianaya89"><i class="fa fa-stack-overflow"></i></a></li>
+        </ul>
+        </section>
 
-    dependencies: [
-      { src: 'plugin/markdown/marked.js' },
-      { src: 'plugin/markdown/markdown.js' },
-      { src: 'plugin/notes/notes.js', async: true },
-      { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-    ]
-    });
-  </script>
+        <section>
+          <section data-background="img/handsup.gif">
+            <h1 class="bold white">Cuantos de ustedes usan... ?</h1>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Vue.js vs Angular 2</h1>
+          </section>
+
+          <section>
+            <h1>Performance</h1>
+            <img src="img/vs-angular.png" alt="vs-angular", style="width: 50%">
+            <p>
+              <small>23kb vs. 50kb</small>
+            </p>
+          </section>
+
+          <section>
+            <h1>Flexibilidad</h1>
+            <ul>
+              <li>Menos estructurado</li>
+              <li>Menos basado en opinion</li>
+              <li>Orientado a un core</li>
+            </ul>
+          </section>
+
+          <section>
+            <h1>Aprendizaje</h1>
+            <h3>Angular Hello World!</h3>
+            <ul>
+              <li>ES2015</li>
+              <li>npm con 15 deps</li>
+              <li>4 archivos</li>
+              <li>3000 palabras para explicarlo</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Vue.js vs React</h1>
+          </section>
+
+          <section>
+            <h1>Similitudes</h1>
+            <ul>
+              <li>virtual DOM</li>
+              <li>Reactividad</li>
+              <li>Basado en un core</li>
+              <li>Minimizan mutaciones en el DOM</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Diferencias</h2>
+            <p>
+              In React, let’s say the additional overhead of rendering an element is 1 and the overhead of an average component is 2. In Vue, the overhead of an element would be more like 0.1, but the overhead of an average component would be 4, due to the setup required for the reactivity system.
+            </p>
+            <p>
+              In React, you need to implement shouldComponentUpdate everywhere and use immutable data structures to achieve fully optimized re-renders. In Vue, a component’s dependencies are automat- ically tracked so that it only updates when one of those dependencies change. The only further optimization that sometimes can be helpful in Vue is adding a key attribute to items in long lists.
+              This means updates in unoptimized Vue will be much faster than unoptimized React and actually, due to the improved render performance in Vue, even fully-optimized React will usually be slower than Vue is out-of-the-box.
+            </p>
+            <p>
+              if you’re prototyping any high-performance data visualizations or animations, you may find it useful to know that in scenarios where Vue can’t handle more than 10 frames per second in development, we’ve seen React slow down to about 1 frame per second.
+            </p>
+          </section>
+
+          <section>
+            <h1>Performance</h1>
+            <p>Tabla</p>
+          </section>
+
+          <section>
+            <h1>Tamaño</h1>
+            <p>23kb vs 50kb</p>
+          </section>
+
+          <section>
+            <h1>Flexibilidad</h1>
+            <ul>
+              <li>Menos estructurado</li>
+              <li>Menos basado en opinion</li>
+            </ul>
+          </section>
+
+          <section>
+            <h1>Aprendizaje</h1>
+            <h3>Angular Hello World!</h3>
+            <ul>
+              <li>ES2015</li>
+              <li>npm con 15 deps</li>
+              <li>4 archivos</li>
+              <li>3000 palabras para explicarlo</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Por que Vue.js?</h1>
+          </section>
+
+          <section>
+            <h1>Complejidad</h1>
+            <h3>Inherente vs. Instrumental</h3>
+          </section>
+
+          <section>
+            <img src="img/circles.png" alt="vue-circles">
+          </section>
+
+          <section>
+            <h1>Caracteristicas</h1>
+            <ul>
+              <li><i>Framework Progresivo</i> <i class="fa fa-arrow-right" aria-hidden="true"></i> UI</li>
+              <li>View de MV*</li>
+              <li>Reactivo</li>
+              <li>Basado en <i>core</i></li>
+              <li>Orientado a componentes</li>
+              <li>Modular</li>
+              <li>Muy Facil de Aprender</li>
+              <li>Vue.js + tools + libraries = SPA</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Progressive Framework</h1>
+          </section>
+
+          <section>
+            <img src="img/progressive.png" alt="progressive">
+          </section>
+
+          <section data-background="img/mostaza.jpg">
+            <h1 class="white bold">Mostaza.js (?)</h1>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Declarative Rendering</h1>
+            <div style="float: left; display: inline; width: 50%">
+              <img src="img/declarative-rendering.png" alt="declarative-rendering">
+            </div>
+            <div style="float: left; display: inline; margin-left: 50px; margin-top: 50px">
+              <ul>
+                <li>Reactivo</li>
+                <li>Automático</li>
+                <li>Solo Vista</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2>Hello Vue!</h2>
+            <pre>
+              <code>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+
+                <div id="app">
+                  {{ hello }}
+                </div>
+
+                <script>
+                  const app = new Vue({
+                    el: '#app',
+
+                    data: {
+                      hello: 'Hello Vue!'
+                    }
+                  });
+                </script>
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <h2>Mustache Syntax</h2>
+            <pre>
+              <code>
+                {{ 'hello ' }} {{ 'world!'}}
+                {{ 1 + 2 }}
+                {{ true ? 'yes' : 'no' }}
+                {{ str.replace(/-/g, '')}}
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <h2>Directives</h2>
+            <pre>
+              <code>
+                v-for
+                v-if
+                v-else
+                v-show
+                v-model
+                v-html
+                v-once
+                v-bind => :
+                v-on => @
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <h2>Methods</h2>
+            <pre>
+              <code>
+                methods: {
+                  doSomething() {
+                    console.log('...');
+                  }
+                }
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <h2>Computed</h2>
+            <pre>
+              <code>
+                computed: {
+                  fullName() {
+                    return `${this.first} ${this.last}`;
+                  }
+                }
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <h2>Watch</h2>
+            <pre>
+              <code>
+                watch: {
+                  name(newVal, oldVal) {
+                    console.log(newVal, oldVal);
+                  }
+                }
+              </code>
+            </pre>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Component System</h2>
+            <div >
+              <img src="img/components.png" alt="components">
+            </div>
+          </section>
+
+          <section>
+            <ul>
+              <li>ASAP</li>
+              <li>Auto contenidos</li>
+              <li>Reutilizables (no siempre)</li>
+              <li>Estructura de árbol</li>
+              <li>Elementos custom</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Componentes en Archivos (.vue)</h2>
+            <ul>
+              <li>Modulos ES2015</li>
+              <li>template + script + style</li>
+              <li>HTML + CSS + JavaScript</li>
+              <li>Pug + SASS + Pug</li>
+              <li>Hot Reload</li>
+              <li>Scoped CSS</li>
+              <li>TypeScript o JSX</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h2>Client Side Routing</h2>
+        </section>
+
+        <section>
+          <h2>Large Scale State Management</h2>
+        </section>
+
+        <section>
+          <h2>Build System (DX)</h2>
+        </section>
+
+        <section data-background="img/applause.gif">
+          <h1 class="white">Gracias! 👏</h1>
+          <h3><a href="http://twitter.com/ianaya89">@ianaya89</a></h3>
+          <h1><a href="http://bit.ly/2hZCyk3">http://bit.ly/2hZCyk3</a></h1>
+        </section>
+
+        <section data-background="img/wait.gif">
+          <h1 class="white">Preguntas?</h1>
+        </section>
+      </div>
+    </div>
+
+    <div>
+      <img src="img/vue.png" alt="vue" style="position: absolute; bottom: 35px;left: 15px; width: 64px;">
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      Reveal.initialize({
+      history: true,
+
+      dependencies: [
+        { src: 'plugin/markdown/marked.js' },
+        { src: 'plugin/markdown/markdown.js' },
+        { src: 'plugin/notes/notes.js', async: true },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+      ]
+      });
+    </script>
   </body>
 </html>
