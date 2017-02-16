@@ -68,6 +68,16 @@
           <section data-background="img/handsup.gif">
             <h1 class="bold white">Cuantos de ustedes usan... ?</h1>
           </section>
+
+          <section>
+            <h2><a href="http://stateofjs.com/" target="_blank">The State of JavaScript 2016</a></h2>
+            <ul>
+              <li>Menos conocido (77%)</li>
+              <li>Intencion de aprender (49%)</li>
+              <li>Intencion de volver a usar (88%)</li>
+              <li>+ 300k descargas mensuales en npm</li>
+            </ul>
+          </section>
         </section>
 
         <section>
@@ -76,7 +86,7 @@
           </section>
 
           <section>
-            <h1>Performance</h1>
+            <h2>Performance</h2>
             <img src="img/vs-angular.png" alt="vs-angular", style="width: 50%">
             <p>
               <small>23kb vs. 50kb</small>
@@ -84,7 +94,7 @@
           </section>
 
           <section>
-            <h1>Flexibilidad</h1>
+            <h2>+ Flexibilidad</h2>
             <ul>
               <li>Menos estructurado</li>
               <li>Menos basado en opinion</li>
@@ -93,13 +103,13 @@
           </section>
 
           <section>
-            <h1>Aprendizaje</h1>
-            <h3>Angular Hello World!</h3>
+            <h2>- Curva de Aprendizaje</h2>
+            <p><u>Angular Hello World:</u></p>
             <ul>
               <li>ES2015</li>
               <li>npm con 15 deps</li>
               <li>4 archivos</li>
-              <li>3000 palabras para explicarlo</li>
+              <li>3000 palabras explicación</li>
             </ul>
           </section>
         </section>
@@ -110,57 +120,30 @@
           </section>
 
           <section>
-            <h1>Similitudes</h1>
+            <h2>Similitudes</h2>
             <ul>
-              <li>virtual DOM</li>
-              <li>Reactividad</li>
-              <li>Basado en un core</li>
+              <li>Virtual DOM</li>
+              <li>Reactividad y Componentes</li>
+              <li><i>Core based</i> (Vista)</li>
               <li>Minimizan mutaciones en el DOM</li>
             </ul>
           </section>
 
           <section>
             <h2>Diferencias</h2>
-            <p>
-              In React, let’s say the additional overhead of rendering an element is 1 and the overhead of an average component is 2. In Vue, the overhead of an element would be more like 0.1, but the overhead of an average component would be 4, due to the setup required for the reactivity system.
-            </p>
-            <p>
-              In React, you need to implement shouldComponentUpdate everywhere and use immutable data structures to achieve fully optimized re-renders. In Vue, a component’s dependencies are automat- ically tracked so that it only updates when one of those dependencies change. The only further optimization that sometimes can be helpful in Vue is adding a key attribute to items in long lists.
-              This means updates in unoptimized Vue will be much faster than unoptimized React and actually, due to the improved render performance in Vue, even fully-optimized React will usually be slower than Vue is out-of-the-box.
-            </p>
-            <p>
-              if you’re prototyping any high-performance data visualizations or animations, you may find it useful to know that in scenarios where Vue can’t handle more than 10 frames per second in development, we’ve seen React slow down to about 1 frame per second.
-            </p>
-          </section>
-
-          <section>
-            <h1>Performance</h1>
-            <p>Tabla</p>
-          </section>
-
-          <section>
-            <h1>Tamaño</h1>
-            <p>23kb vs 50kb</p>
-          </section>
-
-          <section>
-            <h1>Flexibilidad</h1>
             <ul>
-              <li>Menos estructurado</li>
-              <li>Menos basado en opinion</li>
+              <li>No <code>shouldComponentUpdate</code> (Tracking Automático)</li>
+              <li>"No requiere" optimizaciones</li>
+              <li>Animaciones 10x</li>
+              <li>+elementos y -componentes</li>
             </ul>
           </section>
 
           <section>
-            <h1>Aprendizaje</h1>
-            <h3>Angular Hello World!</h3>
-            <ul>
-              <li>ES2015</li>
-              <li>npm con 15 deps</li>
-              <li>4 archivos</li>
-              <li>3000 palabras para explicarlo</li>
-            </ul>
+            <h2>Performance</h2>
+            <img src="img/vs-react.png" alt="vs-react", style="width: 50%">
           </section>
+
         </section>
 
         <section>
@@ -171,10 +154,6 @@
           <section>
             <h1>Complejidad</h1>
             <h3>Inherente vs. Instrumental</h3>
-          </section>
-
-          <section>
-            <img src="img/circles.png" alt="vue-circles">
           </section>
 
           <section>
@@ -190,14 +169,12 @@
               <li>Vue.js + tools + libraries = SPA</li>
             </ul>
           </section>
-        </section>
 
-        <section>
-          <section>
-            <h1>Progressive Framework</h1>
+          <section data-background="img/circles-2.png">
           </section>
 
           <section>
+            <h2>Progressive Framework</h2>
             <img src="img/progressive.png" alt="progressive">
           </section>
 
