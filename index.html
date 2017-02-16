@@ -174,7 +174,7 @@
           </section>
 
           <section>
-            <h2>Progressive Framework</h2>
+            <h2>The Progressive Framework</h2>
             <img src="img/progressive.png" alt="progressive">
           </section>
 
@@ -199,94 +199,65 @@
           </section>
 
           <section>
-            <h2>Hello Vue!</h2>
-            <pre>
-              <code>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
-
-                <div id="app">
-                  {{ hello }}
-                </div>
-
-                <script>
-                  const app = new Vue({
-                    el: '#app',
-
-                    data: {
-                      hello: 'Hello Vue!'
-                    }
-                  });
-                </script>
-              </code>
-            </pre>
+            <p data-height="500" data-theme-id="dark" data-slug-hash="xgeYxa" data-default-tab="html,result" data-user="ianaya89" data-embed-version="2" data-pen-title="Vue Hello World!" class="codepen">See the Pen <a href="http://codepen.io/ianaya89/pen/xgeYxa/">Vue Hello World!</a> by Ignacio Anaya (<a href="http://codepen.io/ianaya89">@ianaya89</a>) on <a href="http://codepen.io">CodePen</a>.</p>
           </section>
 
           <section>
             <h2>Mustache Syntax</h2>
-            <pre>
-              <code>
-                {{ 'hello ' }} {{ 'world!'}}
-                {{ 1 + 2 }}
-                {{ true ? 'yes' : 'no' }}
-                {{ str.replace(/-/g, '')}}
-              </code>
-            </pre>
+            <ul>
+              <li><code>{{ 'hello ' }} {{ 'world!'}}</code></li>
+              <li><code>{{ 1 + 2 }}</code></li>
+              <li><code>{{ true ? 'yes' : 'no' }}</code></li>
+              <li><code>{{ str.replace(/-/g, '')}}</code></li>
+              <li><code>{{ JSON.stringify(obj) }}</code></li>
+            </ul>
           </section>
 
           <section>
             <h2>Directives</h2>
-            <pre>
-              <code>
-                v-for
-                v-if
-                v-else
-                v-show
-                v-model
-                v-html
-                v-once
-                v-bind => :
-                v-on => @
-              </code>
-            </pre>
+            <ul>
+              <li><code>v-if v-else-if v-else</code></li>
+              <li><code>v-show</code></li>
+              <li><code>v-for</code></li>
+              <li><code>v-model</code></li>
+              <li><code>v-html</code></li>
+              <li><code>v-text</code></li>
+              <li><code>v-once</code></li>
+              <li><code>v-cloak</code></li>
+              <li><code>v-pre</code></li>
+              <li><code>v-bind o :</code></li>
+              <li><code>v-on o @</code></li>
+            </ul>
+            <p>
+              <small>Custom directives</small>
+            </p>
           </section>
 
           <section>
-            <h2>Methods</h2>
-            <pre>
-              <code>
-                methods: {
-                  doSomething() {
-                    console.log('...');
-                  }
-                }
-              </code>
-            </pre>
+            <h2>Modifiers</h2>
+            <ul>
+              <li><code>.stop</code></li>
+              <li><code>.prevent</code></li>
+              <li><code>.capture</code></li>
+              <li><code>.self</code></li>
+              <li><code>.{keyCode | keyAlias}</code></li>
+              <li><code>.once</code></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 style="margin-top: -10px">Methods</h2>
+            <p data-height="300" data-theme-id="dark" data-slug-hash="wgZyyJ" data-default-tab="js" data-user="ianaya89" data-embed-version="2" data-pen-title="Vue Methods" class="codepen">See the Pen <a href="http://codepen.io/ianaya89/pen/wgZyyJ/">Vue Methods</a> by Ignacio Anaya (<a href="http://codepen.io/ianaya89">@ianaya89</a>) on <a href="http://codepen.io">CodePen</a>.</p>
           </section>
 
           <section>
             <h2>Computed</h2>
-            <pre>
-              <code>
-                computed: {
-                  fullName() {
-                    return `${this.first} ${this.last}`;
-                  }
-                }
-              </code>
-            </pre>
+            <p data-height="350" data-theme-id="dark" data-slug-hash="OWGQwp" data-default-tab="js,result" data-user="ianaya89" data-embed-version="2" data-pen-title="Vue Computed" class="codepen">See the Pen <a href="http://codepen.io/ianaya89/pen/OWGQwp/">Vue Computed</a> by Ignacio Anaya (<a href="http://codepen.io/ianaya89">@ianaya89</a>) on <a href="http://codepen.io">CodePen</a>.</p>
           </section>
 
           <section>
             <h2>Watch</h2>
-            <pre>
-              <code>
-                watch: {
-                  name(newVal, oldVal) {
-                    console.log(newVal, oldVal);
-                  }
-                }
-              </code>
-            </pre>
+            <p data-height="350" data-theme-id="dark" data-slug-hash="Ndmyew" data-default-tab="js" data-user="ianaya89" data-embed-version="2" data-pen-title="Vue Watch" class="codepen">See the Pen <a href="http://codepen.io/ianaya89/pen/Ndmyew/">Vue Watch</a> by Ignacio Anaya (<a href="http://codepen.io/ianaya89">@ianaya89</a>) on <a href="http://codepen.io">CodePen</a>.</p>
           </section>
         </section>
 
@@ -352,6 +323,7 @@
 
     <script src="lib/js/head.min.js"></script>
     <script src="js/reveal.js"></script>
+    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
     <script>
       Reveal.initialize({

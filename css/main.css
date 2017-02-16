@@ -2,7 +2,7 @@ body {
   background: #f3f3f3;
 }
 
-.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5 , .reveal h6, .reveal p, .reveal ul li, .reveal quote {
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5 , .reveal h6, .reveal p, .reveal ul li, .reveal quote, .reveal code {
   text-transform: none;
   font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   color: #35495E;
