@@ -106,12 +106,16 @@
 
           <section>
             <h2>Performance vs. React</h2>
-            <img src="img/vs-react.png" alt="vs-react", style="width: 50%">
+            <a href="vs.html" target="_blank">
+              <img src="img/vs-react.png" alt="vs-react", style="width: 50%">
+            </a>
           </section>
 
           <section>
             <h2>Performance vs. Angular</h2>
-            <img src="img/vs-angular.png" alt="vs-angular", style="width: 50%">
+            <a href="vs.html" target="_blank">
+              <img src="img/vs-angular.png" alt="vs-angular", style="width: 50%">
+            </a>
           </section>
 
           <section data-background="img/circles-2.png">
@@ -143,6 +147,7 @@
           </section>
 
           <section>
+            <h2>👋🌎</h2>
             <p data-height="500" data-theme-id="dark" data-slug-hash="xgeYxa" data-default-tab="html,result" data-user="ianaya89" data-embed-version="2" data-pen-title="Vue Hello World!" class="codepen">See the Pen <a href="http://codepen.io/ianaya89/pen/xgeYxa/">Vue Hello World!</a> by Ignacio Anaya (<a href="http://codepen.io/ianaya89">@ianaya89</a>) on <a href="http://codepen.io">CodePen</a>.</p>
           </section>
 
@@ -158,7 +163,7 @@
           </section>
 
           <section>
-            <h2>Directives</h2>
+            <h2>Directives I</h2>
             <ul>
               <li><code>v-if v-else-if v-else</code></li>
               <li><code>v-show</code></li>
@@ -166,28 +171,41 @@
               <li><code>v-model</code></li>
               <li><code>v-html</code></li>
               <li><code>v-text</code></li>
-              <li><code>v-once</code></li>
-              <li><code>v-cloak</code></li>
-              <li><code>v-pre</code></li>
-              <li><code>v-bind o :</code></li>
-              <li><code>v-on o @</code></li>
             </ul>
             <p>
               <small>Custom directives</small>
             </p>
           </section>
 
-          <!-- <section>
-            <h2>Modifiers</h2>
+          <section>
+            <h2>Directives II</h2>
             <ul>
-              <li><code>.stop</code></li>
-              <li><code>.prevent</code></li>
-              <li><code>.capture</code></li>
-              <li><code>.self</code></li>
-              <li><code>.{keyCode | keyAlias}</code></li>
-              <li><code>.once</code></li>
+              <li><code>v-once</code></li>
+              <li><code>v-cloak</code></li>
+              <li><code>v-pre</code></li>
             </ul>
-          </section> -->
+          </section>
+
+          <section>
+            <h2>Directives III</h2>
+            <ul>
+              <li><code>v-bind o :</code></li>
+              <li><code>v-on o @</code></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Directives IV</h2>
+            <ul>
+              <li><code>v-bind o :</code></li>
+              <li><code>v-on o @</code></li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Directives V</h2>
+            <p data-height="300" data-theme-id="11099" data-slug-hash="VbZNer" data-default-tab="html" data-user="ianaya89" data-embed-version="2" data-pen-title="Vue Directives" class="codepen">See the Pen <a href="http://codepen.io/ianaya89/pen/VbZNer/">Vue Directives</a> by Ignacio Anaya (<a href="http://codepen.io/ianaya89">@ianaya89</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+          </section>
 
           <section>
             <h2 style="margin-top: -10px">Methods</h2>
@@ -323,14 +341,6 @@
             <h1>Large Scale State Management</h1>
             <h3><a href="https://github.com/vuejs/vuex" target="_blank">vuex</a></h3>
           </section>
-
-          <!-- <section>
-            <img src="img/vuex.png" alt="vuex" style="width: 80%">
-            <ul>
-              <li><i>Store</i> centralizado</li>
-              <li>Flujo de data <i>One-Way</i></li>
-            </ul>
-          </section> -->
         </section>
 
         <section>
@@ -353,71 +363,6 @@
           <h1><a href="http://codepen.io/ianaya89/pen/wgZqdV" class="white">DEMO</a></h1>
         </section>
 
-        <!-- <section>
-          <section>
-            <h1>Vue.js vs Angular 2</h1>
-          </section>
-
-          <section>
-            <h2>Performance</h2>
-            <p>
-              <small>23kb vs. 50kb</small>
-            </p>
-          </section>
-
-          <section>
-            <h2>+ Flexibilidad</h2>
-            <ul>
-              <li>Menos estructurado</li>
-              <li>Menos basado en opinion</li>
-              <li>Orientado a un core</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>- Curva de Aprendizaje</h2>
-            <p><u>Angular Hello World:</u></p>
-            <ul>
-              <li>ES2015</li>
-              <li>npm con 15 deps</li>
-              <li>4 archivos</li>
-              <li>3000 palabras explicación</li>
-            </ul>
-          </section>
-        </section> -->
-
-        <!-- <section>
-          <section>
-            <h1>Vue.js vs React</h1>
-          </section>
-
-          <section>
-            <h2>Similitudes</h2>
-            <ul>
-              <li>Virtual DOM</li>
-              <li>Reactividad y Componentes</li>
-              <li><i>Core based</i> (Vista)</li>
-              <li>Minimizan mutaciones en el DOM</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>Diferencias</h2>
-            <ul>
-              <li>No <i>shouldComponentUpdate</i> (Tracking Automático)</li>
-              <li>"No requiere" optimizaciones</li>
-              <li>Animaciones 10x</li>
-              <li>+elementos y -componentes</li>
-            </ul>
-          </section>
-
-          <section>
-            <h2>Performance</h2>
-            <img src="img/vs-react.png" alt="vs-react", style="width: 50%">
-          </section>
-
-        </section> -->
-
         <section>
           <h1>Recursos</h1>
           <ul>
@@ -435,6 +380,7 @@
           <h1 class="">Gracias! 👏</h1>
           <h3><a href="http://twitter.com/ianaya89">@ianaya89</a></h3>
           <h1><a href="http://bit.ly/2kOsxrz">http://bit.ly/2kOsxrz</a></h1>
+          <h1><a href="https://www.youtube.com/watch?v=ysx2Dpaju4w&t">📹</a></h1>
         </section>
 
         <section data-background="img/think.gif">

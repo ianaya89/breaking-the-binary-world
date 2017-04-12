@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Breakin the Binary World | Vue.js</title>
+
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Roboto Mono" rel="stylesheet" type="text/css">
+  <link href="//opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous" rel="stylesheet" >
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  </head>
+
+  <body>
+    <div style="background: #41B883; height: 7px">
+    </div>
+    <div style="background: #35495E; height: 5px">
+    </div>
+
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section>
+            <h1>Vue.js vs Angular 2</h1>
+          </section>
+
+          <section>
+            <h2>Performance</h2>
+            <p>
+              <small>23kb vs. 50kb</small>
+            </p>
+          </section>
+
+          <section>
+            <h2>+ Flexibilidad</h2>
+            <ul>
+              <li>Menos estructurado</li>
+              <li>Menos basado en opinion</li>
+              <li>Orientado a un core</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>- Curva de Aprendizaje</h2>
+            <p><u>Angular Hello World:</u></p>
+            <ul>
+              <li>ES2015</li>
+              <li>npm con 15 deps</li>
+              <li>4 archivos</li>
+              <li>3000 palabras explicación</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Vue.js vs React</h1>
+          </section>
+
+          <section>
+            <h2>Similitudes</h2>
+            <ul>
+              <li>Virtual DOM</li>
+              <li>Reactividad y Componentes</li>
+              <li><i>Core based</i> (Vista)</li>
+              <li>Minimizan mutaciones en el DOM</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Diferencias</h2>
+            <ul>
+              <li>No <i>shouldComponentUpdate</i> (Tracking Automático)</li>
+              <li>"No requiere" optimizaciones</li>
+              <li>Animaciones 10x</li>
+              <li>+elementos y -componentes</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Performance</h2>
+            <img src="img/vs-react.png" alt="vs-react", style="width: 50%">
+          </section>
+
+        </section>
+
+
+      </div>
+    </div>
+
+    <div>
+      <img src="img/vue.png" alt="vue" style="position: absolute; bottom: 35px;left: 15px; width: 64px;">
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+    <script>
+      Reveal.initialize({
+      history: true,
+
+      dependencies: [
+        { src: 'plugin/markdown/marked.js' },
+        { src: 'plugin/markdown/markdown.js' },
+        { src: 'plugin/notes/notes.js', async: true },
+        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+      ]
+      });
+    </script>
+  </body>
+</html>
